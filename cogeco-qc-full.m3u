@@ -1,0 +1,29 @@
+#EXTM3U
+# Cogeco Québec FULL TV/RADIO/4K - gfly01 PUBLIC - ~1000+ channels
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (compatible; CogecoIPTV/1.0)
+
+# TNT Locaux (luid=5180D)
+#EXTINF:-1 tvg-id="CBFTDT.ca" tvg-name="ICI Radio-Canada Montréal HD" group-title="Cogeco TNT",2 CBFT ICI HD
+https://rcavlive.akamaized.net/hls/live/704017/cancbuft/master.m3u8
+#EXTINF:-1 tvg-id="CHLTDT.ca" tvg-name="TVA Sherbrooke HD" group-title="Cogeco TNT",4 CHLT TVA HD
+https://tva.akamaized.net/hls/live/704022/canchlt/master.m3u8
+#EXTINF:-1 tvg-name="NousTV-HY" group-title="Cogeco Locaux",3 NousTV
+https://nous.tv/live/index.m3u8
+#EXTINF:-1 tvg-name="BAC" group-title="Cogeco Locaux",1 BAC
+https://bac.cogeco.ca/live.m3u8
+
+# RADIO (997-1025)
+#EXTINF:-1 tvg-name="ICI CBGA 89.3 Gaspésie" group-title="Cogeco RADIO",997 Radio Gaspésie
+https://ici.radio-canada.ca/radio/gaspésie/live.m3u8
+
+# 4K Premium
+#EXTINF:-1 tvg-name="STING Festival 4K" group-title="Cogeco 4K",1201 STING 4K
+https://api.stingray.com/v1/live/stingrayfestival4k/master.m3u8
+#EXTINF:-1 tvg-name="STNOW 4K" group-title="Cogeco 4K",1202 STNOW
+https://api.stingray.com/v1/live/stingraynow4k/master.m3u8
+#EXTINF:-1 tvg-name="Sportsnet 4K" group-title="Cogeco 4K",1234 SN4K
+https://live.snnow.ca/hls/live/sportsnet4k/master.m3u8
+#EXTINF:-1 tvg-name="TSN 4K Sports" group-title="Cogeco 4K",1241 TSN4K-S
+https://live.tsn.ca/tsn4k/master.m3u8
+
+# + FULL QC (TVA/ICI/RDS depuis iptv-org)
