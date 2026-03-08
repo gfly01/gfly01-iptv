@@ -1,45 +1,62 @@
 #EXTM3U tvg-url="https://iptv-org.github.io/epg/guides/ca.epg.xml"
-# COGECO QC FULL FIXED - PREMIUMS LIVE EXTREME
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
-## COGECO TNT (OK)
-#EXTINF:-1 tvg-id="CBFTDT.ca" tvg-name="ICI HD (2)",ICI HD
+# ===== QUEBEC =====
+
+#EXTINF:-1 tvg-id="CBFTDT.ca" tvg-name="ICI Radio-Canada Montréal" group-title="Québec",ICI Radio-Canada
 https://rcavlive.akamaized.net/hls/live/704017/cancbuft/master.m3u8
-#EXTINF:-1 tvg-id="CHLTDT.ca" tvg-name="TVA Sherbrooke HD (4)",TVA Sherbrooke
-https://tva.akamaized.net/hls/live/704022/canchlt/master.m3u8
-#EXTINF:-1 tvg-name="NousTV (3)",NousTV
+
+#EXTINF:-1 tvg-id="CFCFDT.ca" tvg-name="CTV Montréal" group-title="Québec",CTV Montréal
+https://cfcfdtlive.akamaized.net/hls/live/2037476/cfcfdt/master.m3u8
+
+#EXTINF:-1 tvg-name="NousTV" group-title="Québec",NousTV
 https://nous.tv/live/index.m3u8
-#EXTINF:-1 tvg-name="BAC (1)",BAC
+
+#EXTINF:-1 tvg-name="BAC" group-title="Québec",BAC
 https://bac.cogeco.ca/live.m3u8
 
-## PREMIUMS FIX LIVE (Testés)
-#EXTINF:-1 tvg-name="Super Écran 1",SE1
-https://iptv4k.live/super1.m3u8
-#EXTINF:-1 tvg-name="Super Écran 2",SE2
-https://iptv4k.live/super2.m3u8
-#EXTINF:-1 tvg-name="Super Écran 3",SE3
-https://iptv4k.live/super3.m3u8
-#EXTINF:-1 tvg-name="Super Écran 4",SE4
-https://iptv4k.live/super4.m3u8
-#EXTINF:-1 tvg-name="AddicTV",AddicTV
-https://hd1.freeiptv.life/addiktv.m3u8
-#EXTINF:-1 tvg-name="Canal D",Canal D
-https://canald-noovo.icirad.io/live.m3u8
 
-## SPORTS FIX
-#EXTINF:-1 tvg-id="RDS.ca" tvg-name="RDS HD",RDS
-https://rdshoq-rdstelm3-vh.akamaihd.net/i/rdshoq_1@205270/master.m3u8
-#EXTINF:-1 tvg-name="TSN1",TSN1
-https://live.tsn.ca/hls/live/2000111/tsn1/playlist.m3u8
+# ===== CANADA =====
 
-## 4K + RADIO (OK)
-#EXTINF:-1 tvg-name="Radio Gaspésie 99.3",Radio Gaspésie
+#EXTINF:-1 tvg-id="CBC.ca" tvg-name="CBC News" group-title="Canada",CBC News
+https://cbcnews.akamaized.net/hls/live/2000000/cbcnews/master.m3u8
+
+#EXTINF:-1 tvg-name="Global News" group-title="Canada",Global News
+https://globalnews.akamaized.net/hls/live/2000001/globalnews/master.m3u8
+
+
+# ===== RADIO =====
+
+#EXTINF:-1 group-title="Radio Québec",Radio Gaspésie 99.3
 https://chgm-fm.creacast.com/weo/high/playlist.m3u8
 
-## GLOBAL (Clique pour charger)
-#EXTINF:-1 tvg-name="QC 300+",QC Full
+#EXTINF:-1 group-title="Radio Québec",ICI Première
+https://rcavliveaudio.akamaized.net/hls/live/704025/cancbuft/master.m3u8
+
+
+# ===== PLAYLISTS COMPLETES =====
+
+#EXTINF:-1 group-title="Listes IPTV",Québec (300+)
 https://iptv-org.github.io/iptv/subdivisions/ca-qc.m3u
-#EXTINF:-1 tvg-name="Canada 146+",CA Full
+
+#EXTINF:-1 group-title="Listes IPTV",Canada (140+)
 https://iptv-org.github.io/iptv/countries/ca.m3u
-#EXTINF:-1 tvg-name="USA 500+",US Full
+
+#EXTINF:-1 group-title="Listes IPTV",USA (500+)
 https://iptv-org.github.io/iptv/countries/us.m3u
+#EXTINF:-1 tvg-id="SuperEcran1.ca" tvg-name="Super Écran 1" group-title="Premium",Super Écran 1
+https://iptv4k.live/super1.m3u8
+
+#EXTINF:-1 tvg-id="SuperEcran2.ca" tvg-name="Super Écran 2" group-title="Premium",Super Écran 2
+https://iptv4k.live/super2.m3u8
+
+#EXTINF:-1 tvg-id="SuperEcran3.ca" tvg-name="Super Écran 3" group-title="Premium",Super Écran 3
+https://iptv4k.live/super3.m3u8
+
+#EXTINF:-1 tvg-id="SuperEcran4.ca" tvg-name="Super Écran 4" group-title="Premium",Super Écran 4
+https://iptv4k.live/super4.m3u8
+
+#EXTINF:-1 tvg-id="AddikTV.ca" tvg-name="AddikTV" group-title="Québec",AddikTV
+https://hd1.freeiptv.life/addiktv.m3u8
+
+#EXTINF:-1 tvg-id="CanalD.ca" tvg-name="Canal D" group-title="Québec",Canal D
+https://canald-noovo.icirad.io/live.m3u8
