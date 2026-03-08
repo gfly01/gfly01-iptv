@@ -60,3 +60,8 @@ https://hd1.freeiptv.life/addiktv.m3u8
 
 #EXTINF:-1 tvg-id="CanalD.ca" tvg-name="Canal D" group-title="Québec",Canal D
 https://canald-noovo.icirad.io/live.m3u8
+# Ajoute RDS/TSN sports (VPN QC)
+#EXTINF:-1 tvg-id="RDS.ca" tvg-name="RDS HD" group-title="Sports",RDS
+https://rdshoq-rdstelm3-vh.akamaihd.net/i/rdshoq_1@205270/master.m3u8
+#EXTINF:-1 tvg-name="TSN1" group-title="Sports",TSN1
+https://live.tsn.ca/hls/live/2000111/tsn1/playlist.m3u8
