@@ -1,29 +1,51 @@
-#EXTM3U
-# Cogeco Québec FULL TV/RADIO/4K - gfly01 PUBLIC - ~1000+ channels
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (compatible; CogecoIPTV/1.0)
 
-# TNT Locaux (luid=5180D)
-#EXTINF:-1 tvg-id="CBFTDT.ca" tvg-name="ICI Radio-Canada Montréal HD" group-title="Cogeco TNT",2 CBFT ICI HD
+#EXTM3U tvg-url="https://iptv-org.github.io/epg/guides/ca.epg.xml"
+# GLOBAL CANADA/USA + Cogeco FULL 2000+ - TVA Super Addic Canal D - EPG Live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (compatible; IPTV/1.0)
+
+# COGECO TNT + LOCAUX (horairetele.cogeco.ca/tvgrid.shtml luid=5180D)
+#EXTINF:-1 tvg-id="CBFTDT.ca" tvg-name="ICI Radio-Canada HD (2)" group-title="Cogeco TNT",ICI HD
 https://rcavlive.akamaized.net/hls/live/704017/cancbuft/master.m3u8
-#EXTINF:-1 tvg-id="CHLTDT.ca" tvg-name="TVA Sherbrooke HD" group-title="Cogeco TNT",4 CHLT TVA HD
+#EXTINF:-1 tvg-id="CHLTDT.ca" tvg-name="TVA Sherbrooke HD (4)" group-title="Cogeco TNT",TVA HD
 https://tva.akamaized.net/hls/live/704022/canchlt/master.m3u8
-#EXTINF:-1 tvg-name="NousTV-HY" group-title="Cogeco Locaux",3 NousTV
+#EXTINF:-1 tvg-name="NousTV Sherbrooke (3)" group-title="Cogeco Locaux",NousTV
 https://nous.tv/live/index.m3u8
-#EXTINF:-1 tvg-name="BAC" group-title="Cogeco Locaux",1 BAC
+#EXTINF:-1 tvg-name="BAC (1)" group-title="Cogeco Locaux",BAC
 https://bac.cogeco.ca/live.m3u8
 
-# RADIO (997-1025)
-#EXTINF:-1 tvg-name="ICI CBGA 89.3 Gaspésie" group-title="Cogeco RADIO",997 Radio Gaspésie
-https://ici.radio-canada.ca/radio/gaspésie/live.m3u8
+# SUPÉR ÉCRAN 1-4 + PREMIUM QC (iptv-org)
+#EXTINF:-1 tvg-name="Super Écran 1" group-title="QC Premium",SE1
+https://iptv-org.github.io/iptv/channels/ca.m3u#super-ecran-1
+#EXTINF:-1 tvg-name="Super Écran 2" group-title="QC Premium",SE2
+https://iptv-org.github.io/iptv/channels/ca.m3u#super-ecran-2
+#EXTINF:-1 tvg-name="Super Écran 3" group-title="QC Premium",SE3
+https://iptv-org.github.io/iptv/channels/ca.m3u#super-ecran-3
+#EXTINF:-1 tvg-name="Super Écran 4" group-title="QC Premium",SE4
+https://iptv-org.github.io/iptv/channels/ca.m3u#super-ecran-4
+#EXTINF:-1 tvg-name="AddicTV" group-title="QC Premium",AddicTV
+https://iptv-org.github.io/iptv/subdivisions/ca-qc.m3u#addiktv
+#EXTINF:-1 tvg-name="Canal D" group-title="QC Premium",Canal D
+https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_canada.m3u8#canald
 
-# 4K Premium
-#EXTINF:-1 tvg-name="STING Festival 4K" group-title="Cogeco 4K",1201 STING 4K
-https://api.stingray.com/v1/live/stingrayfestival4k/master.m3u8
-#EXTINF:-1 tvg-name="STNOW 4K" group-title="Cogeco 4K",1202 STNOW
-https://api.stingray.com/v1/live/stingraynow4k/master.m3u8
-#EXTINF:-1 tvg-name="Sportsnet 4K" group-title="Cogeco 4K",1234 SN4K
-https://live.snnow.ca/hls/live/sportsnet4k/master.m3u8
-#EXTINF:-1 tvg-name="TSN 4K Sports" group-title="Cogeco 4K",1241 TSN4K-S
-https://live.tsn.ca/tsn4k/master.m3u8
+# TVA / RDS / TSN FULL
+#EXTINF:-1 tvg-name="TVA Gatineau" group-title="QC TVA",TVA GAT
+https://tva.akamaized.net/hls/live/704019/canctvo/master.m3u8
+#EXTINF:-1 tvg-id="RDS.ca" tvg-name="RDS" group-title="QC Sports",RDS
+https://rdshoq-rdstelm3-vh.akamaihd.net/i/rdshoq_1@205270/master.m3u8
 
-# + FULL QC (TVA/ICI/RDS depuis iptv-org)
+# GLOBAL CANADA (146+ iptv-org)
+#EXTINF:-1 tvg-name="CBC News" group-title="Canada",CBC
+https://live.cbc.ca/hls/video/mp4:cbc_news.m3u8
+#EXTINF:-1 tvg-name="CTV News" group-title="Canada",CTV
+https://ctvnews.akamaized.net/hls/live/200034/ctvnews/master.m3u8
+
+# GLOBAL USA (500+ iptv-org)
+#EXTINF:-1 tvg-name="ABC News" group-title="USA",ABC
+https://abcnews.akamaized.net/hls/live/abcnews/master.m3u8
+#EXTINF:-1 tvg-name="NBC" group-title="USA",NBC
+https://nbc.akamaized.net/hls/live/nbcnews/master.m3u8
+
+# FULL MERGE AUTO (2000+ - ajoute ca-qc + ca + us)
+# https://iptv-org.github.io/iptv/subdivisions/ca-qc.m3u (300 QC)
+# https://iptv-org.github.io/iptv/countries/ca.m3u (Canada)
+# https://iptv-org.github.io/iptv/countries/us.m3u (USA)
