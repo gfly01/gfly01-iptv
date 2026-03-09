@@ -14,7 +14,6 @@ https://nous.tv/live/index.m3u8
 #EXTINF:-1 tvg-name="BAC" group-title="Québec",BAC
 https://bac.cogeco.ca/live.m3u8
 
-
 # ===== CANADA =====
 
 #EXTINF:-1 tvg-id="CBC.ca" tvg-name="CBC News" group-title="Canada",CBC News
@@ -22,7 +21,7 @@ https://cbcnews.akamaized.net/hls/live/2000000/cbcnews/master.m3u8
 
 #EXTINF:-1 tvg-name="Global News" group-title="Canada",Global News
 https://globalnews.akamaized.net/hls/live/2000001/globalnews/master.m3u8
-
+https://gist.github.com/trentwiles/219bc51fa4acad7993a7738a811f933f
 
 # ===== RADIO =====
 
